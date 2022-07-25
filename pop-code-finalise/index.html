@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Pop Code - Page Jeu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.style.css" />
+    <link rel="stylesheet" href="assets/css/loader.style.css" />
+    <script src="https://unpkg.com/vanilla-counter"></script>
+  </head>
+  <body class="body-loader">
+    <div class="logo">
+      <span class="spinner"></span>
+      <object data="assets/images/logoanim.svg" type=""></object>
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="assets/images/photo.png"
+      >
+        <source src="assets/images/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <script type="text/javascript">
+      setTimeout(function () {
+        // jerena ra ordi sa tsia ilay olona
+        // https://www.codegrepper.com/code-examples/javascript/javascript+check+if+screen+width
+        if (window.screen.width >= 991) {
+          // redirigena any amle page index apres 5s
+          window.location.href = "loader.html";
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

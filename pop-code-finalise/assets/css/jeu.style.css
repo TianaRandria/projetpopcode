@@ -1,0 +1,431 @@
+body.body-jeu {
+  padding: 0;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+/**
+* Nohovaina ilay structure fa tsy mety ilay zoom-in rehefa amle body ny background image
+* https://css-tricks.com/zooming-background-images/
+**/
+div.background-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-image: url("../images/chambe2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.background-overlay.zoomed-1-2 {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+div.background-overlay.zoomed-1-4 {
+  -ms-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+div.background-overlay.zoomed-1-6 {
+  -ms-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+div.background-overlay.zoomed-1-8 {
+  -ms-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+div.background-overlay.zoomed-2-0 {
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+}
+
+div.score {
+  width: fit-content;
+  position: relative;
+  left: 34px;
+  top: 20px;
+  display: inline-flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+div.score .score-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 8px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #0aeff7;
+  margin-right: 15px;
+}
+
+div.score .score-status {
+  margin: 0;
+}
+
+div.score .score-value {
+  width: 100%;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+div.score .score-fault {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+div.score .score-fault span {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 13px;
+  color: #4f4f4f;
+}
+
+div.score .score-fault span.x-success {
+  color: #0aeff7;
+}
+
+div.logo {
+  position: fixed;
+  right: 34px;
+  width: fit-content;
+  top: 4.68%;
+}
+
+div.logo img {
+  width: 136px;
+}
+
+div.langages {
+  display: inline-flex;
+  width: 100%;
+  position: fixed;
+  bottom: 34px;
+  left: 32px;
+  align-items: end;
+}
+
+div.zoom {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 25px;
+  bottom: 0px;
+}
+
+div.zoom .zoom-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 8px;
+  text-align: center;
+  /* BLEU */
+  color: #0aeff7;
+}
+
+div.zoom .zoom-tool {
+  height: 150px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+div.zoom .zoom-tool span {
+  width: 25px;
+  display: inline-block;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 11px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+span.zoom-minus {
+  position: absolute;
+  bottom: 0;
+}
+
+div.zoom .zoom-bar {
+  height: 99px;
+  width: 1px;
+  transform: rotate(180deg);
+  border-left: 1px #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.langages ul.langages-list {
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  list-style: none;
+  -webkit-transition: visibility 0s, opacity 1s ease-in-out;
+  -moz-transition: visibility 0s, opacity 1s ease-in-out;
+  -o-transition: visibility 0s, opacity 1s ease-in-out;
+  transition: visibility 0s, opacity 1s ease-in-out;
+}
+
+div.langages ul.langages-list.enable {
+  display: inline-block;
+}
+
+ul.langages-list li.langage-list-item {
+  display: block;
+  margin: 0;
+  margin-bottom: 7px;
+  box-sizing: border-box;
+  width: 163px;
+  height: 24px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+div.langages button {
+  box-sizing: border-box;
+  width: 173px;
+  height: 24px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 8px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* https://developer.mozilla.org/fr/docs/Web/CSS/Adjacent_sibling_combinator */
+ul.langages-list.enable + button {
+  background: #f0f0f0;
+  color: #000;
+  opacity: 0.7;
+}
+
+/* https://stackoverflow.com/questions/396145/how-can-i-vertically-center-a-div-element-for-all-browsers-using-css */
+div#game-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  padding: 0;
+  opacity: 0.7;
+  text-align: center;
+  align-items: center;
+  z-index: 999;
+  display: none;
+  position: absolute;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+/* https://stackoverflow.com/questions/3772290/css-selector-that-applies-to-elements-with-two-classes */
+div#game-overlay.enable {
+  display: table;
+}
+
+div#game-area {
+  width: fit-content;
+  height: fit-content;
+  /* display: table-cell; */
+  display: none;
+  vertical-align: middle;
+}
+
+div#game-area.enable {
+  display: table-cell;
+}
+
+div#game-area input.reponse {
+  width: 80%;
+  height: 77px;
+  background: transparent;
+  border: none;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 77px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
+input.reponse:focus {
+  outline: none;
+}
+
+div#game-area .game-indication {
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+div#game-reponse {
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  position: absolute;
+  bottom: 200px;
+  left: 50px;
+  padding-left: 50px;
+}
+
+div#game-reponse.enable {
+  display: block;
+}
+
+div#game-reponse div.reponse-titre {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 77px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+span.close-modal {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  color: #ffaaff;
+  font-family: sans-serif;
+  font-size: smaller;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+div#game-reponse div.reponse-details {
+  display: table;
+  width: fit-content;
+}
+
+div.reponse-details div.reponse-img {
+  display: table-cell;
+}
+
+div.reponse-details div.reponse-img img {
+  max-width: 430px;
+  max-height: 430px;
+  overflow: hidden;
+}
+
+div#game-reponse div.reponse-desc {
+  max-width: 630px;
+  display: table-cell;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 30px;
+  vertical-align: top;
+}
+
+div#game-reponse div.reponse-close {
+  text-align: right;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+div.reponse-close.disable {
+  display: none;
+}

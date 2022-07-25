@@ -1,0 +1,49 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.politique {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 34px;
+    right: 32px;
+    align-items: end;
+}
+
+div.politique ul.menu-politique {
+    position: inherit;
+    width: fit-content;
+    right: 32px;
+    bottom: 20px;
+    list-style: none;
+}
+
+ul.menu-politique li.menu-politique-item {
+    width: fit-content;
+    float: left;
+    margin-right: 27px;
+}
+
+li.menu-politique-item a {
+    font-family: Gotham;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+}
+
+i.icon-search {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/icon-search.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}

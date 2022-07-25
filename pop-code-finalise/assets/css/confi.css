@@ -1,0 +1,18 @@
+body {
+  background-image: url(../images/chambe2.jpg);
+  font-family: "gotham";
+  color: rgb(75, 235, 247);
+  font-size: 14px;
+}
+h1 {
+  text-align: center;
+  color: aqua;
+}
+.parent {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  text-align: justify;
+  margin: 0 auto;
+}

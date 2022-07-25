@@ -1,0 +1,84 @@
+body.body-default {
+  background-image: url("../images/default-bg.jpeg");
+}
+
+div.container-mobile {
+  display: none;
+}
+
+div.container {
+  width: 588px;
+  height: 447px;
+  position: relative;
+  margin: auto;
+  margin-top: 93px;
+  align-items: center;
+  justify-content: center;
+}
+
+div.logo {
+  width: 588px;
+  height: 447px;
+  max-width: 100%;
+  max-height: 100%;
+  /* align children in the center */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+}
+
+div.count-down {
+  position: relative;
+  font-family: "Gotham";
+  font-weight: 700;
+  font-size: 150px;
+  color: #0aeff7;
+  text-align: center;
+  vertical-align: top;
+}
+
+div.welcome-text {
+  position: relative;
+  width: 316px;
+  margin: 0 auto;
+  font-family: "Gotham";
+  font-style: "Book";
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+div.welcome-link {
+  position: relative;
+  text-align: center;
+  margin: 50px auto;
+}
+
+div.welcome-link > a {
+  color: #ffaaff;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Gotham";
+  font-size: 13px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 991px) {
+  div.container-mobile {
+    display: block;
+  }
+
+  div.container {
+    display: none;
+  }
+}

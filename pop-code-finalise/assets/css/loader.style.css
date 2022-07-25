@@ -1,0 +1,68 @@
+body.body-loader {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.logo {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  /* align children in the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* a circle with 60x60 pixels */
+  border-radius: 50%;
+}
+
+.logo > .spinner {
+  position: absolute;
+  display: inline-block;
+  height: 65%;
+  width: 65%;
+  border-radius: 50%;
+  border-top: 5px solid #f3f3f3;
+  box-shadow: 0 -10px 10px #e9e6e94d;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+img.logo-img {
+  z-index: 2;
+}
+p {
+  color: beige;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* code video*/
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}

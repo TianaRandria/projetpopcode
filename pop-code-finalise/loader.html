@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Pop Code - Page Jeu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.style.css" />
+    <link rel="stylesheet" href="assets/css/index.style.css" />
+  </head>
+  <body class="body-default">
+    <div class="container-mobile">
+      <div class="count-down">Oupss!!</div>
+      <div class="welcome-text">Essayez d'utiliser <br />un ordinateur</div>
+    </div>
+    <div class="container">
+      <div class="logo">
+        <img src="assets/images/logo-pop-code.png" />
+      </div>
+      <div class="count-down">27</div>
+      <div class="welcome-text">
+        réferences de <br />LANGAGES DE PROGRAMMATION <br />à retrouver
+      </div>
+      <div class="welcome-link">
+        <a href="jeu.html">CLIQUER POUR COMMENCER</a>
+      </div>
+    </div>
+    <div class="politique">
+      <ul class="menu-politique">
+        <li class="menu-politique-item">
+          <a href="#">Mentions legales</a>
+        </li>
+        <li class="menu-politique-item">
+          <a href="#">Politique de confidentialite</a>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      setTimeout(function () {
+        // jerena ra ordi sa tsia ilay olona
+        // https://www.codegrepper.com/code-examples/javascript/javascript+check+if+screen+width
+        if (window.screen.width >= 991) {
+          // redirigena any amle page jeu apres 3s
+          window.location.href = "jeu.html";
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

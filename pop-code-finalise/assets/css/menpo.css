@@ -1,0 +1,25 @@
+body {
+  background-image: url(../images/chambe2.jpg);
+  font-family: "gotham";
+  color: rgb(75, 235, 247);
+  font-size: 14px;
+}
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 15px;
+}
+.vatany {
+  text-align: center;
+  width: 80vh;
+  height: 100vh;
+  margin-left: 570px;
+}
+p {
+  color: aliceblue;
+}
+ul {
+  color: aliceblue;
+}
